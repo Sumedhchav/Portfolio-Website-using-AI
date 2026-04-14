@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5A4FF3; /* Vibrant Purple */
+  --color-accent: #FFB200;  /* Vibrant Yellow/Orange */
+  --color-background: #F9FAFB;
+  --color-foreground: #111827;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  overflow-x: hidden;
+}
